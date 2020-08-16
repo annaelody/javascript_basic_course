@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+<script>
+    'use strict';
+
+    function add(a, b) {
+        return a + b;
+    }
+
+    function subtract(a, b) {
+        return a - b;
+    }
+
+    function multiply(a, b) {
+        return a * b;
+    }
+
+    function divide(a, b) {
+        return a / b;
+    }
+
+    function mathOperation(arg1, arg2, operation) {
+        switch (operation) {
+            case "add":
+                return add(arg1, arg2);
+            case "subtract":
+                return subtract(arg1, arg2);
+            case "multiply":
+                return multiply(arg1, arg2);
+            case "divide":
+                return divide(arg1, arg2);
+        }
+    }
+
+    alert(mathOperation(6, 2, "add"));
+    alert(mathOperation(6, 2, "subtract"));
+    alert(mathOperation(6, 2, "multiply"));
+    alert(mathOperation(6, 2, "divide"));
+
+</script>
+</body>
+
+</html>
